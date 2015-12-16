@@ -98,7 +98,7 @@ tidyData <- cbind(joinSubject, joinLabel, joinData)
 #### Step 7: Creates a second, independent tidy data set with the average of each
 #### variable for each activity and each subject. Save this dataset into file.
 # =============================
-install.packages("reshape2")
+#install.packages("reshape2")
 library(reshape2)
 # =============================
 # Melt the tidyData set for each activity and subject
@@ -109,6 +109,11 @@ meanMeasurementBySubjectActivity <- dcast(meltTidyData, subject + activity ~ var
 # dim output show 180 observations and 68 variables
 # 180 observations are expected. 30 subject * 6 activity
 # 68 variables are expected. 1 subject variable + 1 activity variable + 66 measurement variables
+
+
+#### =============================
+#### Step 8: Save the newly created dataset into file of 
+#### name "mean_measurement_by_subject_activity.txt"
 # =============================
 # Create a file "mean_measurement_by_subject_activity.txt" containing the new tidy dataset
 write.table(meanMeasurementBySubjectActivity,"mean_measurement_by_subject_activity.txt", row.name=FALSE)
