@@ -23,7 +23,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 *******
 ## Section 3: Transformation process from input data source to the processed data output
-* This section describe how the transformation done by run_analysis.R script.
+* This section describe the transformation done by run_analysis.R script.
 * For steps related to running the run_analysis.R script, kindly refer to the README.md
 * The processing done by this script can be group into 8 major steps 
     1. Reading from all relevant files into R
